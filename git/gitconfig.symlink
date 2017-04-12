@@ -1,0 +1,28 @@
+[user]
+  name = Tobias Olsson
+  email = firewolf882002@hotmail.com
+[push]
+  default = current
+[color]
+  ui = true
+  status = auto
+  branch = auto
+  interactive = auto
+  repositoryformatversion = 0
+  filemode = true
+  bare = false
+  logallrefupdates = true
+[color "diff-highlight"]
+  oldNormal = "red bold"
+  oldHighlight = "red bold 52"
+  newNormal = "green bold"
+  newHighlight = "green bold 22"
+[core]
+  excludesfile = /Users/Tobias/.gitignore_global
+  editor = vim
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true

@@ -15,6 +15,9 @@ alias zs='subl ~/.zshrc'
 alias csd='cap staging deploy'
 alias cpd='cap production deploy'
 
+## Fetch and merge core/develop
+alias gmc='git fetch core && git merge --no-ff core/develop'
+
 # Mysql
 alias mysqlstart='sudo /usr/local/mysql/support-files/mysql.server start'
 alias mysqlrestart='sudo /usr/local/mysql/support-files/mysql.server restart'
@@ -31,3 +34,4 @@ alias dockercreatemysql='docker run -i -t -p 3306:3306 -v ${PWD}/mysql:/var/lib/
 alias jonic='ssh jonictextil@server6.c4hosting.se'
 alias jackan='ssh root@jackan.com'
 
+alias phpv='brew-php-switcher'

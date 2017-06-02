@@ -1,0 +1,38 @@
+{
+	"caret_extra_bottom": 0,
+	"caret_extra_top": 0,
+	"caret_extra_width": 0,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"create_window_at_startup": false,
+	"default_line_ending": "unix",
+	"detect_indentation": true,
+	"detect_slow_plugins": false,
+	"draw_minimap_border": true,
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Source Code Pro",
+	"font_size": 14,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"1337 Color Scheme",
+		"All Autocomplete",
+		"CSS Media Query Snippets",
+		"DocBlockr",
+		"Git",
+		"Vintage"
+	],
+	"index_files": true,
+	"move_to_limit_on_up_down": true,
+	"rulers":
+	[
+		80,
+		120
+	],
+	"scroll_past_end": true,
+	"show_full_path": false,
+	"show_tab_close_buttons": false,
+	"translate_tabs_to_spaces": true,
+	"word_wrap": true
+}

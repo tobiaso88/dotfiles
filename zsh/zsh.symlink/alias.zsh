@@ -35,3 +35,14 @@ alias jonic='ssh jonictextil@server6.c4hosting.se'
 alias jackan='ssh root@jackan.com'
 
 alias phpv='brew-php-switcher'
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Google Chrome
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+
+# Shortcuts
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias sites="cd ~/Sites"

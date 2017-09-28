@@ -15,8 +15,9 @@ alias zs='subl ~/.zshrc'
 alias csd='cap staging deploy'
 alias cpd='cap production deploy'
 
-## Fetch and merge core/develop
+## Git stuff
 alias gmc='git fetch core && git merge --no-ff core/develop'
+alias rebasedev="git fetch --all && git rebase origin/develop"
 
 # Mysql
 alias mysqlstart='sudo /usr/local/mysql/support-files/mysql.server start'
@@ -46,6 +47,3 @@ alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias sites="cd ~/Sites"
-
-
-alias rebasedev="git fetch --all && git rebase origin/develop"

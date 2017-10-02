@@ -68,7 +68,7 @@ brew "homebrew/apache/mod_fastcgi", args: ["with-homebrew-httpd22"]
 brew "homebrew/php/brew-php-switcher"
 brew "homebrew/php/composer"
 brew "homebrew/php/igbinary"
-brew "homebrew/php/php56", args: ["with-homebrew-curl", "with-httpd24", "without-ldap"]
+brew "homebrew/php/php56", args: ["with-homebrew-curl", "with-httpd24", "with-libmysql", "without-ldap"]
 brew "homebrew/php/php56-apcu"
 brew "homebrew/php/php56-igbinary"
 brew "homebrew/php/php56-imagick"

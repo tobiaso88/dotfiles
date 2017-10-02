@@ -1,50 +1,39 @@
-tap "caskroom/cask"
-tap "gapple/services"
 tap "guoxiao/php7"
-tap "homebrew/apache"
-tap "homebrew/bundle"
-tap "homebrew/core"
 tap "homebrew/dupes"
+tap "homebrew/apache"
+tap "homebrew/core"
 tap "homebrew/php"
 tap "homebrew/versions"
+tap "homebrew/bundle"
 tap "rstacruz/backup"
+tap "caskroom/cask"
+tap "gapple/services"
 brew "ack"
-brew "apr"
-brew "apr-util"
 brew "aspell"
 brew "autoconf"
 brew "bison@2.7"
-brew "boost"
+brew "certbot"
 brew "cmake"
 brew "cowsay"
-brew "curl", args: ["with-libssh2", "with-openssl"]
 brew "dnsmasq", restart_service: true
 brew "gettext"
 brew "flex"
-brew "fontconfig", args: ["universal"]
+brew "fontconfig"
 brew "fortune"
-brew "jpeg", args: ["universal"]
-brew "webp", args: ["universal"]
-brew "gd", args: ["universal"]
+brew "gd"
 brew "gmp"
-brew "libtasn1", args: ["universal"]
 brew "nettle"
 brew "gnutls"
 brew "libtool", args: ["universal"]
 brew "graphviz"
 brew "htop"
 brew "icu4c"
-brew "jasper", args: ["universal"]
-brew "libevent"
-brew "libusb", args: ["universal"]
-brew "libusb-compat", args: ["universal"]
-brew "libgphoto2", args: ["universal"]
-brew "libicns", args: ["universal"]
-brew "memcached"
+brew "jasper"
+brew "libgphoto2"
+brew "libicns"
 brew "libmemcached"
 brew "libyaml"
-brew "little-cms2", args: ["universal"]
-brew "macvim", args: ["HEAD", "with-lua", "with-override-system-vim"]
+brew "little-cms2"
 brew "makedepend"
 brew "mhash"
 brew "mcrypt"
@@ -53,7 +42,7 @@ brew "node"
 brew "re2c"
 brew "redis", restart_service: true
 brew "ruby", args: ["HEAD"]
-brew "sane-backends", args: ["universal"]
+brew "sane-backends"
 brew "ssh-copy-id"
 brew "thefuck"
 brew "tmux"

@@ -8,7 +8,7 @@ source $HOME/.zsh/functions.zsh
 source $HOME/.zsh/config.zsh
 source $HOME/.zsh/alias.zsh
 
-export PATH=/usr/local/mysql/bin
+export PATH=/usr/local/mysql/support-files/
 export PATH=$PATH:/Users/Tobias/.bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/usr/local/opt/ruby/bin

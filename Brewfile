@@ -85,5 +85,7 @@ brew "homebrew/php/php71-imagick"
 brew "homebrew/php/php71-mcrypt"
 brew "homebrew/php/php71-opcache"
 brew "homebrew/php/php71-redis"
+brew "homebrew/php/php72", args: ["with-homebrew-curl", "with-httpd24"]
+brew "homebrew/php/php72-imagick"
 brew "homebrew/php/phpdocumentor"
 cask "gulp"

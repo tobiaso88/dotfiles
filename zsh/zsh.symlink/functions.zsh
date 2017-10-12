@@ -10,7 +10,7 @@ function nxt () {
     site nxt/$1
 }
 
-function 52 () {
+function b52 () {
     site 52/$1
 }
 

@@ -47,3 +47,6 @@ alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias sites="cd ~/Sites"
+
+# Desk
+alias d.="desk go"

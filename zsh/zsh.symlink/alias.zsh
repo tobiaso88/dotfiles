@@ -8,7 +8,7 @@ alias hosts='subl /etc/hosts'
 alias virtualhosts='subl /usr/local/etc/apache2/2.4/virtualhosts'
 
 # Edit the hosts file
-alias httpd='subl /usr/local/etc/apache2/2.4/httpd.conf'
+alias httpde='subl /usr/local/etc/httpd/httpd.conf'
 
 # Edit the .zshrc file
 alias zs='subl ~/.zshrc'

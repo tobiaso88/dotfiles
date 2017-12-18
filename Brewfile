@@ -39,3 +39,11 @@ cask "slack"
 cask "spotify"
 cask "sublime-text"
 cask "the-unarchiver"
+cask "mas"
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+mas 'Keynote', id: 409183694
+mas 'Slack', id: 803453959
+mas 'Todoist', id: 585829637
+mas 'The Unarchiver', id: 425424353
+mas 'Xcode', id: 497799835

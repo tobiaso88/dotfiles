@@ -1,4 +1,5 @@
 tap "caskroom/cask"
+tap "caskroom/fonts"
 tap "homebrew/apache"
 tap "homebrew/bundle"
 tap "homebrew/core"
@@ -40,6 +41,7 @@ cask "spotify"
 cask "sublime-text"
 cask "the-unarchiver"
 cask "mas"
+cask "font-source-code-pro"
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Keynote', id: 409183694

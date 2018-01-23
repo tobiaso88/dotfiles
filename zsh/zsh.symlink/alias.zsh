@@ -5,7 +5,7 @@ alias aliases='subl ~/.zsh/alias.zsh'
 alias hosts='subl /etc/hosts'
 
 # Open the virtualhosts folder in sublime
-alias virtualhosts='subl /usr/local/etc/apache2/2.4/virtualhosts'
+alias virtualhosts='subl ~/.virtualhosts'
 
 # Edit the hosts file
 alias httpde='subl /usr/local/etc/httpd/httpd.conf'

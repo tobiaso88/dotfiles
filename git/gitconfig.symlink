@@ -1,6 +1,6 @@
 [user]
-  name = Tobias Olsson
-  email = info@tobias-olsson.se
+	name = Tobias Olsson
+	email = info@tobias-olsson.se
 [push]
   default = current
 [color]
@@ -20,3 +20,8 @@
 [core]
   excludesfile = /Users/Tobias/.gitignore_global
   editor = vim
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

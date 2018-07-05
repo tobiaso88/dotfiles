@@ -1,51 +1,56 @@
-tap "caskroom/cask"
-tap "caskroom/fonts"
 tap "homebrew/apache"
 tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/php"
 tap "homebrew/services"
 brew "ack"
+brew "autoconf"
+brew "brew-php-switcher"
 brew "cask"
+brew "composer"
 brew "desk"
+brew "dnsmasq", restart_service: true
+brew "git-flow"
+brew "gitversion"
 brew "htop"
+brew "mariadb", restart_service: true
+brew "mas"
 brew "node"
+brew "php"
+brew "php@5.6", restart_service: true
+brew "php@7.1"
+brew "pkg-config"
+brew "python"
 brew "ssh-copy-id"
-brew "homebrew/php/brew-php-switcher"
-brew "homebrew/php/composer"
-brew "homebrew/php/php56", args: ["with-homebrew-curl", "with-httpd", "with-libmysql"], link: false
-brew "homebrew/php/php56-imagick"
-brew "homebrew/php/php56-opcache"
-brew "homebrew/php/php71", args: ["with-homebrew-curl", "with-httpd"], link: false
-brew "homebrew/php/php71-imagick"
-brew "homebrew/php/php71-opcache"
-brew "homebrew/php/php72", args: ["with-homebrew-curl", "with-httpd"], link: false
-brew "homebrew/php/php72-imagick"
-brew "homebrew/php/php72-opcache"
+brew "sshpass"
 brew "virtualhost.sh"
-brew "thefuck"
-brew "fortune"
-brew "mariadb"
+brew "wget"
 brew "yarn"
-cask "alfred"
+brew "zsh-autosuggestions"
 cask "avocode"
+cask "cakebrew"
+cask "dropbox"
 cask "firefox"
 cask "google-chrome"
-cask "goofy"
 cask "grandperspective"
 cask "iterm2"
+cask "postman"
 cask "rowanj-gitx"
 cask "sequel-pro"
-cask "slack"
 cask "spotify"
 cask "sublime-text"
-cask "the-unarchiver"
-cask "mas"
-cask "font-source-code-pro"
-mas 'Numbers', id: 409203825
-mas 'Pages', id: 409201541
-mas 'Keynote', id: 409183694
-mas 'Slack', id: 803453959
-mas 'Todoist', id: 585829637
-mas 'The Unarchiver', id: 425424353
-mas 'Xcode', id: 497799835
+cask "transmit"
+cask "homebrew/cask-fonts/font-awesome-terminal-fonts"
+cask "homebrew/cask-fonts/font-fontawesome"
+cask "homebrew/cask-fonts/font-hack-nerd-font"
+cask "homebrew/cask-fonts/font-source-code-pro"
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "OneDrive", id: 823766827
+mas "Pages", id: 409201541
+mas "Slack", id: 803453959
+mas "The Unarchiver", id: 425424353
+mas "Todoist", id: 585829637
+mas "Xcode", id: 497799835

@@ -13,6 +13,9 @@ brew bundle
 rake
 ```
 
+# Apache
+Follow this guide for the settings https://getgrav.org/blog/macos-catalina-apache-multiple-php-versions
+
 # Fix permissions for apache logs
 ```
 chown -R tobias:staff /usr/local/var/log/httpd
@@ -25,6 +28,12 @@ cat ~/dotfiles/php/7/php.ini >> /usr/local/etc/php/7.1/php.ini
 cat ~/dotfiles/php/7/php.ini >> /usr/local/etc/php/7.2/php.ini
 cat ~/dotfiles/php/7/php.ini >> /usr/local/etc/php/7.3/php.ini
 cat ~/dotfiles/php/7/php.ini >> /usr/local/etc/php/7.4/php.ini
+```
+
+# Php switcher
+```
+curl -L https://gist.githubusercontent.com/rhukster/f4c04f1bf59e0b74e335ee5d186a98e2/raw > /usr/local/bin/sphp
+chmod +x /usr/local/bin/sphp
 ```
 
 # Dnsmasq

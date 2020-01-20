@@ -1,0 +1,45 @@
+<VirtualHost *:80>
+    UseCanonicalName Off
+    ServerAlias *.nxt.local
+    VirtualDocumentRoot "/Users/tobias/Sites/nxt/%1/public"
+    <Directory "/Users/tobias/Sites/nxt/*">
+        Require all granted
+        AllowOverride All
+        Options Indexes FollowSymLinks
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:443>
+    UseCanonicalName Off
+    ServerAlias *.*.nxt.local
+    VirtualDocumentRoot "/Users/tobias/Sites/nxt/%2/public"
+    Protocols h2 h2c http/1.1
+    <Directory "/Users/tobias/Sites/nxt/*">
+        Require all granted
+        AllowOverride All
+        Options Indexes FollowSymLinks
+        Options -MultiViews
+    </Directory>
+
+    SSLEngine on
+    SSLCertificateFile "/Users/tobias/.ssh/sites/teutonia.nxt.local.cert.pem"
+    SSLCertificateKeyFile "/Users/tobias/.ssh/sites/teutonia.nxt.local.key.pem"
+</VirtualHost>
+
+
+<VirtualHost *:443>
+    UseCanonicalName Off
+    ServerAlias *.nxt.local
+    VirtualDocumentRoot "/Users/tobias/Sites/nxt/%1/public"
+    Protocols h2 h2c http/1.1
+    <Directory "/Users/tobias/Sites/nxt/*">
+        Require all granted
+        AllowOverride All
+        Options Indexes FollowSymLinks
+        Options -MultiViews
+    </Directory>
+
+    SSLEngine on
+    SSLCertificateFile "/Users/tobias/.ssh/sites/nxt.local.cert.pem"
+    SSLCertificateKeyFile "/Users/tobias/.ssh/sites/nxt.local.key.pem"
+</VirtualHost>

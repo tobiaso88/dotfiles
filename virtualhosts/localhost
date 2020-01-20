@@ -1,0 +1,24 @@
+# Created Tor 11 Maj 2017 13:35:44 CEST
+<VirtualHost *:80>
+  DocumentRoot "/Users/tobias/Sites"
+  ServerName localhost
+  #ServerAlias your.alias.here
+
+  ScriptAlias /cgi-bin "/Users/tobias/Sites/cgi-bin"
+
+  <Directory "/Users/tobias/Sites">
+    Options All
+    AllowOverride All
+    <IfModule mod_authz_core.c>
+      Require all granted
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+      Order allow,deny
+      Allow from all
+    </IfModule>
+  </Directory>
+
+  # CustomLog "/Users/tobias/Sites/exaktaprofile/logs/access_log" combined
+  # ErrorLog "/Users/tobias/Sites/exaktaprofile/logs/error_log"
+
+</VirtualHost>

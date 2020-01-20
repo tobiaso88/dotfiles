@@ -1,0 +1,25 @@
+<VirtualHost *:80>
+    UseCanonicalName Off
+    ServerAlias *.laravel.local
+    VirtualDocumentRoot "/Users/tobias/Sites/laravel/%1/public"
+    <Directory "/Users/tobias/Sites/laravel/*">
+        Require all granted
+        AllowOverride All
+        Options Indexes FollowSymLinks
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:443>
+    UseCanonicalName Off
+    ServerAlias *.laravel.local
+    VirtualDocumentRoot "/Users/tobias/Sites/laravel/%1/public"
+    <Directory "/Users/tobias/Sites/laravel/*">
+        Require all granted
+        AllowOverride All
+        Options Indexes FollowSymLinks
+    </Directory>
+
+    SSLEngine on
+    SSLCertificateFile "/Users/tobias/.ssh/sites/laravel.local.cert.pem"
+    SSLCertificateKeyFile "/Users/tobias/.ssh/sites/laravel.local.key.pem"
+</VirtualHost>

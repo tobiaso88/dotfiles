@@ -1,0 +1,25 @@
+<VirtualHost *:80>
+    UseCanonicalName Off
+    ServerAlias *.other.local
+    VirtualDocumentRoot "/Users/tobias/Sites/other/%1/public"
+    <Directory "/Users/tobias/Sites/other/*">
+        Require all granted
+        AllowOverride All
+        Options Indexes FollowSymLinks
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:443>
+    UseCanonicalName Off
+    ServerAlias *.other.local
+    VirtualDocumentRoot "/Users/tobias/Sites/other/%1/public"
+    <Directory "/Users/tobias/Sites/other/*">
+        Require all granted
+        AllowOverride All
+        Options Indexes FollowSymLinks
+    </Directory>
+
+    SSLEngine on
+    SSLCertificateFile "/Users/tobias/.ssh/sites/other.local.cert.pem"
+    SSLCertificateKeyFile "/Users/tobias/.ssh/sites/other.local.key.pem"
+</VirtualHost>

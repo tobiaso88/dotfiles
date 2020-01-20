@@ -1,0 +1,29 @@
+<VirtualHost *:80>
+    UseCanonicalName Off
+    ServerAlias *.52.local
+    VirtualDocumentRoot "/Users/tobias/Sites/52/%1/public"
+    <Directory "/Users/tobias/Sites/52/*">
+        Require all granted
+        AllowOverride All
+        Options Indexes FollowSymLinks
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:443>
+    UseCanonicalName Off
+    ServerAlias *.52.local
+    VirtualDocumentRoot "/Users/tobias/Sites/52/%1/public"
+    <Directory "/Users/tobias/Sites/52/*">
+        Require all granted
+        AllowOverride All
+        Options Indexes FollowSymLinks
+    </Directory>
+
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^(\w*)\.(?:.*)\.local$
+    RewriteRule ^/(.*\.php(/.*)?)$ fcgi://127.0.0.1:9056/Users/tobias/Sites/52/%1/public/$1 [P]
+
+    SSLEngine on
+    SSLCertificateFile "/Users/tobias/.ssh/sites/52.local.cert.pem"
+    SSLCertificateKeyFile "/Users/tobias/.ssh/sites/52.local.key.pem"
+</VirtualHost>

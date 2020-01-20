@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+    UseCanonicalName Off
+    ServerAlias test.local
+    VirtualDocumentRoot "/Users/tobias/Sites/test"
+    <Directory "/Users/tobias/Sites/test">
+        Require all granted
+        AllowOverride All
+        Options Indexes FollowSymLinks
+    </Directory>
+    ProxyPassMatch ^/(?!cart|api)$ https://rosahuset.nxt.local/$1
+</VirtualHost>

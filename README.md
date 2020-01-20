@@ -1,5 +1,10 @@
 To install run rake
 
+# Install homebrew
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 # Fix permissions for apache logs
 ```
 chown -R tobias:staff /usr/local/var/log/httpd

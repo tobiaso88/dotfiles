@@ -28,16 +28,9 @@ cat ~/dotfiles/php/7/php.ini >> /usr/local/etc/php/7.4/php.ini
 ```
 
 # Dnsmasq
-## 1
 ```
 echo 'address=/.local/127.0.0.1' > /usr/local/etc/dnsmasq.conf
-```
-## 2
-```
 sudo brew services start dnsmasq
-```
-## 3
-```
 sudo mkdir -v /etc/resolver
 sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/local'
 ```

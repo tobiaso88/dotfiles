@@ -1,0 +1,10 @@
+cd ~/Sites/52
+if [ $1 ] ; then
+    if [ $2 ] ; then
+        git clone --single-branch --branch=$1 git@github.com:c4webbutveckling/Ebutik.git $2/public
+    else
+        git clone --single-branch --branch=$1 git@github.com:c4webbutveckling/Ebutik.git $1/public
+    fi
+else
+    echo "use gclone <repository> <branch> [folder]"
+fi

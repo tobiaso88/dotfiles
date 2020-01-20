@@ -1,0 +1,1 @@
+ssh exaktasoftware@exaktahosting.am-tryck.lan "~/deploy $1 $2"

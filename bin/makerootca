@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -e
+
+openssl genrsa -out \
+    /usr/local/etc/httpd/ssl/private/ca.key.pem 4096
+
+# create root cert
+openssl req -x509 \
+    -config /usr/local/etc/httpd/openssl.conf \
+    -new \
+    -nodes \
+    -key /usr/local/etc/httpd/ssl/private/ca.key.pem \
+    -sha256 \
+    -days 7300 \
+    -subj "/C=SE/ST=Skane/L=Hassleholm/O=Exakta Software/CN=Exakta Software" \
+    -out /usr/local/etc/httpd/ssl/certs/ca.cert.pem
+
+sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain /usr/local/etc/httpd/ssl/certs/ca.cert.pem

@@ -24,8 +24,5 @@ export PATH=$PATH:/sbin
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:$HOME/.composer/vendor/bin
 
-export EXAKTAHOSTING_USERNAME="wh@exaktasoftware.se"
-export EXAKTAHOSTING_PASSWORD="123123"
-
 # Hook for desk activation
 [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true

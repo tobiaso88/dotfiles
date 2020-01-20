@@ -28,3 +28,5 @@ export PATH=$PATH:$HOME/.composer/vendor/bin
 [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+eval "$(rbenv init -)"

@@ -1,8 +1,16 @@
-To install run rake
-
 # Install homebrew
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+# Bundle brew
+```
+brew bundle
+```
+
+# Setup config
+```
+rake
 ```
 
 # Fix permissions for apache logs

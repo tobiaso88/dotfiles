@@ -13,6 +13,14 @@ brew bundle
 rake
 ```
 
+# Php 5.6 openssl problems
+If there is any problems installing php 5.6, run this commands
+```
+brew install https://bintray.com/homebrew/bottles/download_file\?file_path\=openssl-1.0.2t.catalina.bottle.tar.gz
+sudo install_name_tool -change /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib /usr/local/Cellar/openssl/1.0.2t/lib/libcrypto.1.0.0.dylib /usr/local/Cellar/php@5.6/5.6.40/bin/php
+sudo install_name_tool -change /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/Cellar/openssl/1.0.2t/lib/libssl.1.0.0.dylib /usr/local/Cellar/php@5.6/5.6.40/bin/php
+```
+
 # Apache
 Follow this guide for the settings https://getgrav.org/blog/macos-catalina-apache-multiple-php-versions
 

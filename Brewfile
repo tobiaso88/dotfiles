@@ -83,18 +83,12 @@ cask "iterm2"
 cask "kap"
 cask "postman"
 cask "rowanj-gitx"
-cask "sequel-pro"
 cask "spotify"
 cask "sublime-text"
 cask "transmit"
-cask "virtualbox"
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
-mas "Slack", id: 803453959
 mas "The Unarchiver", id: 425424353
-mas "Todoist", id: 585829637
 mas "Xcode", id: 497799835

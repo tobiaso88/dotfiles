@@ -18,10 +18,12 @@
   newNormal = "green bold"
   newHighlight = "green bold 22"
 [core]
-  excludesfile = /Users/Tobias/.gitignore_global
+	excludesfile = /Users/tobias/.gitignore
   editor = vim
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[merge "ours"]
+	driver = true
